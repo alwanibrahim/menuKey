@@ -1,0 +1,13 @@
+
+rclone config                 = setup remote storage
+rclone listremotes            = melihat daftar remote
+rclone ls gdrive:             = melihat file di root gdrive
+rclone lsd gdrive:            = melihat folder di gdrive
+rclone copy src dst           = copy file ke remote
+rclone move src dst           = memindahkan file
+rclone sync src dst           = menyamakan folder (hapus yang beda)
+rclone check src dst          = verifikasi integritas file
+rclone size gdrive:           = melihat ukuran total
+rclone delete path            = menghapus file/folder
+rclone purge path             = hapus total folder
+rclone mount gdrive: ~/mnt    = mount gdrive ke lokal

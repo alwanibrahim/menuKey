@@ -1,0 +1,16 @@
+
+tmux                          = start tmux session
+tmux new -s dev               = buat session baru
+tmux ls                       = list session
+tmux attach -t dev            = masuk ke session
+tmux kill-session -t dev      = hapus session
+
+Ctrl+b c                      = buat window baru
+Ctrl+b ,                      = rename window
+Ctrl+b n                      = window berikutnya
+Ctrl+b p                      = window sebelumnya
+Ctrl+b %                      = split pane vertical
+Ctrl+b "                      = split pane horizontal
+Ctrl+b o                      = pindah pane
+Ctrl+b x                      = tutup pane
+Ctrl+b d                      = detach session

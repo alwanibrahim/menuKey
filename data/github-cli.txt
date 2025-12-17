@@ -1,0 +1,14 @@
+
+gh auth login                 = login github cli
+gh auth status                = cek status login
+gh repo create                = buat repo baru
+gh repo clone <repo>          = clone repo
+gh repo view                  = lihat info repo
+gh repo edit                  = edit setting repo
+gh pr create                  = buat pull request
+gh pr list                    = list pull request
+gh pr view <id>               = lihat PR detail
+gh pr merge <id>              = merge PR
+gh issue list                 = list issue
+gh issue create               = buat issue
+gh release create v1.0.0       = buat release

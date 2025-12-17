@@ -1,0 +1,18 @@
+
+docker ps                     = melihat container yang sedang running
+docker ps -a                  = melihat semua container
+docker images                 = melihat semua image
+docker pull nginx             = download image nginx
+docker run nginx              = menjalankan container nginx
+docker run -d nginx           = menjalankan container di background
+docker stop <id>              = menghentikan container
+docker rm <id>                = menghapus container
+docker rmi <image>            = menghapus image
+docker logs <id>              = melihat log container
+docker exec -it <id> sh       = masuk ke dalam container
+docker compose up             = menjalankan service
+docker compose up -d          = menjalankan service background
+docker compose down           = menghentikan service
+docker system df              = melihat penggunaan disk docker
+docker system prune -a        = bersihkan resource tidak terpakai
+

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+bun run /home/alwan/menuKey/src/index.ts
+

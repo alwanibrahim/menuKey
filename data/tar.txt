@@ -1,0 +1,27 @@
+
+tar -cf arsip.tar folder/              = buat arsip .tar
+tar -xf arsip.tar                      = ekstrak arsip .tar
+tar -tf arsip.tar                      = lihat isi arsip
+
+tar -cvf arsip.tar folder/             = buat arsip + tampilkan proses
+tar -xvf arsip.tar                     = ekstrak + tampilkan proses
+tar -tvf arsip.tar                     = lihat isi + detail
+
+tar -czf arsip.tar.gz folder/          = buat arsip gzip
+tar -xzf arsip.tar.gz                  = ekstrak arsip gzip
+tar -tzf arsip.tar.gz                  = lihat isi arsip gzip
+
+tar -cJf arsip.tar.xz folder/          = buat arsip xz
+tar -xJf arsip.tar.xz                  = ekstrak arsip xz
+tar -tJf arsip.tar.xz                  = lihat isi arsip xz
+
+tar -cf arsip.tar file1 file2          = arsip banyak file
+tar -cf arsip.tar dir1 dir2            = arsip banyak folder
+
+tar -cf arsip.tar -C /path folder      = arsip tanpa path panjang
+tar -xf arsip.tar -C /target           = ekstrak ke folder tertentu
+
+tar -czf arsip.tar.gz folder --exclude=node_modules
+                                       = arsip tanpa folder tertentu
+tar -czf arsip.tar.gz folder --exclude=*.log
+                                       = exclude file tertentu
