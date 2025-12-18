@@ -14,3 +14,5 @@ Ctrl+b "                      = split pane horizontal
 Ctrl+b o                      = pindah pane
 Ctrl+b x                      = tutup pane
 Ctrl+b d                      = detach session
+
+tmux new-window               = membuat window baru kalau misal nya dengan nama maka + flag -n nama_window
