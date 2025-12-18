@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Bun
+      - name: Setup Bun (CI)
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
@@ -29,8 +29,10 @@ jobs:
       - name: Deploy to VPS
         run: |
           ssh -o StrictHostKeyChecking=no \
-          ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-            cd ${{ secrets.VPS_PATH }}
-            git pull origin main
-            bun install
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+              zsh -lc '
+                cd "${{ secrets.VPS_PATH }}"
+                git pull origin main
+                bun install
+              '
           EOF
